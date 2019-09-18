@@ -1,3 +1,362 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+0/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Modak', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h4 {
+	font-family: 'Modak', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+
+p {
+	font-family: 'Modak', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+/* Your code starts here! */
+
+/* NAVIGATION SECTION */
+nav {
+	position: fixed;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 96%;
+	margin-bottom: 25px;
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid yellow;
+}
+.nav_class  {
+	margin: 1%;
+	width: 12%;
+	vertical-align: middle;
+    color: gray;
+    
+}
 
 
+.logo {
+	padding: 10px;
+}
+
+.responsive_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid green;
+}
+
+.nav_image_section {
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.services-header-img {
+	width: 100%
+}
+/* HEADER SECTION */
+
+.header_sections {
+	/* margin: 1%; */
+	/* width: 100%; */
+	/* padding-top: 100px; */
+	display: flex;
+	/* justify-contente space-evenly; */
+}
+
+.header_divs {
+	display: flex;
+    /* vertical-align: top; */
+    margin: 1%;
+	width: 47.5%;
+	flex-direction: column;
+	justify-content: flex-start; 
+	/* align-items: flex-start;  */
+}
+
+.header_box{
+	margin: 1%;
+	width: 98%;
+
+}
+
+.header_text {
+	font-family: 'Modak', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+	font-size: 5rem;
+	text-align: center;
+}
+
+.header_button {
+	border: 1px solid black;
+	margin: auto;
+	text-align: center;
+	width: 200px;
+	padding: 10px 30px 10px 30px;
+}
+
+.header_image {
+	display: block;
+	padding-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	/* background-color: red; */
+}
+/* CONTENT SECTION 1 */
+
+hr {
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 3px;
+	background: black;
+	}
+
+.section1 {
+	display: flex;
+	margin: 1%;
+	width: 100%;
+}
+
+.section1_div {
+
+	margin: 1%;
+	width: 47.5%;
+}
+
+/* CONTENT SECTION 2 */
+
+.section2 {
+	display: flex;
+	margin: 1%;
+	width: 100%;
+}
+
+.section2_div {
+	margin: 1%;
+	width: 31%;
+}
+
+#section_image {
+	width: 97%;
+	margin: 2%;
+	/* width: 100%; */
+	background-image: url("../img/mid-page-accent.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 250px;
+	
+}
+
+/* SERVICES SECTION  */
+.services {
+	display: flex;
+	/* margin: 1%; */
+	margin: 10px auto 10px auto;
+
+	width: 96%;
+}
+
+.flexBoxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boxSections {
+	border: 1px solid black;
+	width: 48%;
+	padding: 10px;
+	margin: 10px 0px; 
+	background-color: lightgray;
+}
+
+.services_button {
+	border: 1px solid black;
+	margin: auto;
+	text-align: center;
+	width: 200px;
+	padding: 10px 30px 10px 30px;
+	background-color: white;
+	margin-top: 10px;
+	border-radius: 5px;
+	margin-left: 0px;
+}
+
+/* FACTS SECTION  */
+.facts_section {
+	display: flex;
+	justify-content: left;
+	/* align-items: flex-start; */
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.facts_section_divide {
+	/* width: 48%;
+	display: flex; */
+	/* justify-content: space-evenly; */
+}
+
+.facts_info {
+	width: 60%;
+}
+
+.bullets_div{
+	margin-left: 2%;
+}
+
+ul.square {
+	list-style-type: square;
+	/* background-color: blue0; */
+}
+
+li {
+	margin: 10px 0;
+  }
+
+.services-info-img{
+	flex-grow: 100%;
+}
+/* CONTACT SECTION */
+
+.contact_section {
+	margin: 2%;
+}
+/* FOOTER SECTION 1 */
+
+.footer_class {
+	margin: 20px;
+	text-align: center;
+}
+
+@media(max-width: 800px){
+    
+    nav {
+        /* position: fixed; */
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 96%;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: white;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .responsive_nav {
+        display: flex:
+        flex-direction: row;
+        border: 1px solid green; 
+    }
+    .logo {
+        /* order: -1; */
+        /* justify-content: center;
+        align-items: center; */
+        width: 250px;
+        border: 1px solid black;
+    }
+
+    /* .nav_class {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: flex-end; */
+        /* align-items: flex-end; */
+        /* border: 1px solid red; */
+    /* } */ 
+    .header_sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
+
+    }
+    .header_text {
+        text-align: center;
+        font-size: 4rem;
+    }
+   
+    
+    .header_image {
+        display: none;
+    }
+
+
+}
