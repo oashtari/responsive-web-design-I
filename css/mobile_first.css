@@ -83,7 +83,7 @@ p {
 
 /* MEDIA QUERY 500PX  */
 
-@media(max-width: 649px){
+@media(max-width: 768px){
 
     nav {
         position: relative;
@@ -96,12 +96,7 @@ p {
         justify-content: space-evenly;
     }
 
-    .nav_class {
-        border-bottom: 1px solid gray;
-        align-items: stretch;
-        text-align: center;
-        width: 100%;
-    }
+    
     
     .logo {
         padding: 10px;
@@ -114,6 +109,20 @@ p {
         align-items: center;
     }
 
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_class {
+        border-bottom: 1px solid gray;
+        align-items: stretch;
+        text-align: center;
+        width: 100%;
+        color: grey;
+        padding: 5px;
+    }
     
     .nav_image_section {
         width: 96%;
@@ -133,14 +142,17 @@ p {
     
     .header_sections {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .header_divs {
         display: flex;
         margin: 1%;
-        width: 47.5%;
+        /* width: 47.5%; */
         flex-direction: column;
-        justify-content: flex-start; 
+        align-items: center;
     }
     
     .header_box{
@@ -168,11 +180,7 @@ p {
     }
     
     .header_image {
-        display: block;
-        padding-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 45%;
+        display: none;
     }
     /* CONTENT SECTION 1 */
     
@@ -300,53 +308,12 @@ p {
 }
 
 
-/* MEDIA QUERY 800PX */
 
-@media(min-width: 650px){
-    
-    nav {
-        position: relative;
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: white;
-        align-items: center;
-    }
-    .responsive_nav {
-        display: flex:
-        flex-direction: row;
-    }
-    .logo {
-        width: 250px;
-    }
-
-
-    .header_sections {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header_divs {
-        width: 100%;
-
-    }
-    .header_text {
-        text-align: center;
-        font-size: 4rem;
-    }
-   
-    
-    .header_image {
-        display: none;
-    }
-
-
-}
 
 
 
 /* NAVIGATION SECTION */
-@media(min-width: 1000px){
+@media(min-width: 768px){
 nav {
 	position: fixed;
 	padding-left: 10px;
